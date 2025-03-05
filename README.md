@@ -36,10 +36,8 @@ them to `data/gta`.
 [here](http://synthia-dataset.net/downloads/) and extract it to `data/synthia`.
 
 
-**MESH**: You can collect your own forest environment dataset and put them to 
-```bash 
-data/MESH
-```
+**MESH**: You can collect your own forest environment dataset and put them to `data/MESH`. 
+
 The final folder structure should look like this:
 ```bash 
 DEDA
