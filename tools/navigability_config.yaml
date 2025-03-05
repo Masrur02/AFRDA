@@ -1,0 +1,28 @@
+navigable_classes: [0, 1, 2, 9, 5, 10, 12, 13, 21, 22]
+non_navigable_classes: [3, 4, 6, 7, 8, 11, 14, 15, 16, 17, 18, 19, 20, 23]
+
+class_mapping:
+  dirt: 0
+  sand: 1
+  grass: 2
+  tree: 3
+  pole: 4
+  water: 5
+  sky: 6
+  vehicle: 7
+  object: 8
+  asphalt: 9
+  gravel: 10
+  building: 11
+  mulch: 12
+  rockbed: 13
+  log: 14
+  bicycle: 15
+  person: 16
+  fence: 17
+  bush: 18
+  sign: 19
+  rock: 20
+  bridge: 21
+  concrete: 22
+  picnic-table: 23
