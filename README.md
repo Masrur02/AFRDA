@@ -125,26 +125,30 @@ For more information about the framework structure and the config system,
 please refer to the [mmsegmentation documentation](https://mmsegmentation.readthedocs.io/en/latest/index.html)
 and the [mmcv documentation](https://mmcv.readthedocs.ihttps://arxiv.org/abs/2007.08702o/en/v1.3.7/index.html).
 
-The most relevant files for MIC are:
+The most relevant files for AFRDA are:
 
-* [configs/mic/gtaHR2csHR_mic_hrda.py](configs/mic/gtaHR2csHR_mic_hrda.py):
-  Annotated config file for MIC(HRDA) on GTA→Cityscapes.
+* [configs/afr/gtaHR2csHR_afr_hrda.py](configs/afr/gtaHR2csHR_afr_hrda.py):
+  Annotated config file for AFR on GTA→Cityscapes.
+* [configs/afr/rugd2meshHR_afr_hrda.py](configs/afr/rugdHR2meshHR_afr_hrda.py):
+  Annotated config file for AFR on RUHD→MESH.
 * [experiments.py](experiments.py):
   Definition of the experiment configurations in the paper.
-* [mmseg/models/uda/masking_consistency_module.py](mmseg/models/uda/masking_consistency_module.py):
-  Implementation of MIC.
-* [mmseg/models/utils/masking_transforms.py](mmseg/models/utils/masking_transforms.py):
-  Implementation of the image patch masking.
+* [mmseg/models/decode_heads/hrda_head.py](mmseg/models/decode_models/hrda_head.py):
+  Implementation of the hrda head with integrated AFR module.
 * [mmseg/models/uda/dacs.py](mmseg/models/uda/dacs.py):
-  Implementation of the DAFormer/HRDA self-training with integrated MaskingConsistencyModule
+  Implementation of the DAFormer/HRDA self-training.
+* [tools/inf_ros.py](tools/inf_ros.py):
+  Inference code for implemented in ROS.
+* [in_ros.sh](in_ros.sh):
+  bash file for running the inference code with ros.
 
 ## Acknowledgements
 
-MIC is based on the following open-source projects. We thank their
+AFRDA is based on the following open-source projects. We thank their
 authors for making the source code publicly available.
 
 * [HRDA](https://github.com/lhoyer/HRDA)
-* [DAFormer](https://github.com/lhoyer/DAFormer)
+* [MIC](https://github.com/lhoyer/MIC)
+* [POVNav](https://github.com/Dpushp/POVNav)
 * [MMSegmentation](https://github.com/open-mmlab/mmsegmentation)
 * [SegFormer](https://github.com/NVlabs/SegFormer)
-* [DACS](https://github.com/vikolss/DACS)
