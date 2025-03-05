@@ -89,7 +89,7 @@ python run_experiments.py --config configs/afr/rugd2mesh_hrda.py
 The logs and checkpoints are stored in 
 ```bash 
 work_dirs/
-
+```
 ## Evaluation
 
 A trained model can be evaluated using:
