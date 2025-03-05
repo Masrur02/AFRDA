@@ -34,6 +34,8 @@ them to `data/gta`.
 
 **Synthia (Optional):** Please, download SYNTHIA-RAND-CITYSCAPES from
 [here](http://synthia-dataset.net/downloads/) and extract it to `data/synthia`.
+
+
 **MESH**: You can collect your own forest environment dataset and put them to 
 ```bash 
 data/MESH
