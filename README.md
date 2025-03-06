@@ -145,7 +145,18 @@ The most relevant files for AFRDA are:
 ## Deployment
 For navigating we integrate AFRDA with [POVNav](https://github.com/Dpushp/POVNav). And then we deploy it on a Clearpath Husky Robot. We assume [ros-noetic]([https://github.com/lhoyer/MIC](https://wiki.ros.org/noetic/Installation/Ubuntu)), the anaconda environment mentioned in the Environment Setup, Husky Robot's sensor and base workspace is already on your Robot's onboard computer.
 
-# Navigation Instruction (In order)
+### Navigation Instruction (In order)
+1. Open a terminal
+   ```bash 
+roscoe
+```
+2. In another terminal: run the RGB and the localization launch file
+ ```bash 
+cd husky_n_sensors
+source devel/setup.bash
+roslaunch realsense2_camera rs_d400_and_t265.launch
+
+```
 
 
 
