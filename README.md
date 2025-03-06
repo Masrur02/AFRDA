@@ -178,11 +178,12 @@ roslaunch husky_base base.launch
 6. Now download the PovNav and in another terminal
 ```shell 
 cd povnav_ws
+catkin_make
 source devel/setup.bash
 roslaunch pov_nav sim_pov_nav.launch
 ```
 7. Open rviz, visualize the necessary topics, and from 2D Nav goal option give goal to the planner
-8. 
+8. Now use a python code to publish the velocities generated from the PovNav to Husky
 
 
 
