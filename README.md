@@ -143,7 +143,12 @@ The most relevant files for AFRDA are:
 * [in_ros.sh](in_ros.sh):
   bash file for running the inference code with ros.
 ## Deployment
-For navigating we integrate AFRDA with [POVNav](https://github.com/Dpushp/POVNav). And then we deploy it on a Clearpath Husky Robot. We assume [ros-noetic]([https://github.com/lhoyer/MIC](https://wiki.ros.org/noetic/Installation/Ubuntu)), the anaconda environment mentioned in the Environment Setup, Husky Robot's sensor and base worksapce is already on your Robot's onboard computer.
+For navigating we integrate AFRDA with [POVNav](https://github.com/Dpushp/POVNav). And then we deploy it on a Clearpath Husky Robot. We assume [ros-noetic]([https://github.com/lhoyer/MIC](https://wiki.ros.org/noetic/Installation/Ubuntu)), the anaconda environment mentioned in the Environment Setup, Husky Robot's sensor and base workspace is already on your Robot's onboard computer.
+
+# Navigation Instruction (In order)
+
+
+
 
 
 ## Acknowledgements
