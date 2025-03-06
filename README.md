@@ -148,15 +148,20 @@ For navigating we integrate AFRDA with [POVNav](https://github.com/Dpushp/POVNav
 ### Navigation Instruction (In order)
 1. Open a terminal
 ```shell
-python tools/convert_datasets/gta.py data/gta --nproc 8
-python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
-python tools/convert_datasets/synthia.py data/synthia/ --nproc 8
+roscore
 ```
 2. In another terminal: run the RGB and the localization launch file
  ```shell 
 cd husky_n_sensors
 source devel/setup.bash
 roslaunch realsense2_camera rs_d400_and_t265.launch
+
+```
+3. In another terminal run the AFRDA (Download the checkpoint for forest environment and put it in the work_dirs/local-basic folder)
+```shell 
+cd AFRDA
+Conda activate AFRDA
+sh in_ros.sh AFRDA_mesh
 
 ```
 
