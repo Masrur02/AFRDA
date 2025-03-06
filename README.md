@@ -157,15 +157,32 @@ source devel/setup.bash
 roslaunch realsense2_camera rs_d400_and_t265.launch
 
 ```
-3. In another terminal run the AFRDA (Download the checkpoint for forest environment and put it in the work_dirs/local-basic folder)
+3. In another terminal run the AFRDA (Download the checkpoint for the forest environment and put it in the work_dirs/local-basic folder)
 ```shell 
 cd AFRDA
 Conda activate AFRDA
 sh in_ros.sh AFRDA_mesh
 
 ```
+4. In another terminal use the following command to connect the joystick
+```shell 
+sudo ds4drv
 
-
+```
+5. In another terminal run the husky base launch file:
+```shell 
+cd husky_ws
+source devel/setup.bash
+roslaunch husky_base base.launch
+```
+6. Now download the PovNav and in another terminal
+```shell 
+cd povnav_ws
+source devel/setup.bash
+roslaunch pov_nav sim_pov_nav.launch
+```
+7. Open rviz, visualize the necessary topics, and from 2D Nav goal option give goal to the planner
+8. 
 
 
 
