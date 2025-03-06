@@ -147,11 +147,11 @@ For navigating we integrate AFRDA with [POVNav](https://github.com/Dpushp/POVNav
 
 ### Navigation Instruction (In order)
 1. Open a terminal
-   ```bash 
+   ```shell 
 roscoe
 ```
 2. In another terminal: run the RGB and the localization launch file
- ```bash 
+ ```shell 
 cd husky_n_sensors
 source devel/setup.bash
 roslaunch realsense2_camera rs_d400_and_t265.launch
