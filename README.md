@@ -147,8 +147,10 @@ For navigating we integrate AFRDA with [POVNav](https://github.com/Dpushp/POVNav
 
 ### Navigation Instruction (In order)
 1. Open a terminal
-   ```shell 
-roscoe
+```shell
+python tools/convert_datasets/gta.py data/gta --nproc 8
+python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
+python tools/convert_datasets/synthia.py data/synthia/ --nproc 8
 ```
 2. In another terminal: run the RGB and the localization launch file
  ```shell 
