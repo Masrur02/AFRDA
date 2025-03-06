@@ -116,7 +116,7 @@ Below, we provide checkpoints of AFRDA for the different benchmarks.
 * [AFRDA for GTA→Cityscapes](https://drive.google.com/file/d/14tnErcJmUShyQtzmTBLZ9BG_cRvGM4vV/view?usp=sharing)
 * [AFRDA for Synthia→Cityscapes](https://drive.google.com/file/d/103tKPC72d_FNjyJcAromFBCGpoCfhxZM/view?usp=sharing)
 * [AFRDA for RUGD→MESH](https://drive.google.com/file/d/1Iwm1Whm5hnxhAzv7mfvDRnHN5o58Ubnn/view?usp=sharing)
-
+The checkpoints come with the training logs. Please note that: The logs provide the mIoU for 19 classes. For Synthia→Cityscapes, it is necessary to convert the mIoU to the 16 valid classes. Please, read the section above for converting the mIoU.
 
 ## Framework Structure
 
@@ -138,10 +138,11 @@ The most relevant files for AFRDA are:
 * [mmseg/models/uda/dacs.py](mmseg/models/uda/dacs.py):
   Implementation of the DAFormer/HRDA self-training.
 * [tools/inf_ros.py](tools/inf_ros.py):
-  Inference code for implemented in ROS.
+  Inference code for implementation in ROS.
 * [in_ros.sh](in_ros.sh):
   bash file for running the inference code with ros.
-
+## Navigation Instruction
+For navigating we integrate AFRDA with 
 ## Acknowledgements
 
 AFRDA is based on the following open-source projects. We thank their
