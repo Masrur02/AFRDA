@@ -76,7 +76,7 @@ python tools/convert_datasets/synthia.py data/synthia/ --nproc 8
 # Training
 A training job for gta2cs can be launched using:
 ```bash
-python run_experiments.py --config configs/afr/gtaHR2csHR_hrda.py
+python run_experiments.py --config configs/afr/gtaHR2csHR_afr_hrda.py
 ```
 A training job for syn2cs can be launched using:
 ```bash
