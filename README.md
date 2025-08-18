@@ -1,8 +1,9 @@
 # AFRDA: Attentive Feature Refinement for Domain Adaptive Semantic Segmentation
-<div style="width:100%; display:flex; justify-content:center; gap:12px; margin:0;">
-  <a href="https://ieeexplore.ieee.org/document/11115028"><strong>Paper</strong></a>
+<div style="display:flex; justify-content:center; gap:12px; width:100%; margin:0 auto;">
+  <a href="https://ieeexplore.ieee.org/document/11115028"><strong>Paper (IEEE)</strong></a>
   <a href="https://arxiv.org/abs/2507.17957"><strong>arXiv</strong></a>
 </div>
+
 
 ## Environment Setup
 
