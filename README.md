@@ -1,9 +1,9 @@
 # AFRDA: Attentive Feature Refinement for Domain Adaptive Semantic Segmentation
-
-<p style="display:flex; justify-content:center; gap:12px; margin:0;">
-  <a href="https://ieeexplore.ieee.org/document/11115028"><strong>Paper (IEEE)</strong></a>
+<div style="width:100%; display:flex; justify-content:center; gap:12px; margin:0;">
+  <a href="https://ieeexplore.ieee.org/document/11115028"><strong>Paper</strong></a>
   <a href="https://arxiv.org/abs/2507.17957"><strong>arXiv</strong></a>
-</p>
+</div>
+
 ## Environment Setup
 
 First, please install cuda version 11.0.3 available at [https://developer.nvidia.com/cuda-11-0-3-download-archive](https://developer.nvidia.com/cuda-11-0-3-download-archive). It is required to build mmcv-full later.
