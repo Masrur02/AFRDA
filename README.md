@@ -1,11 +1,4 @@
-# AFRDA: Attentive Feature Refinement for Domain Adaptive Semantic Segmentation
-
-<div style="display:flex; justify-content:center; align-items:center; width:100%; margin:50 auto;">
-  <a href="https://ieeexplore.ieee.org/document/11115028"><strong>Paper</strong></a>
-  <span style="width:20px;"></span>
-  <a href="https://arxiv.org/abs/2507.17957"><strong>arXiv</strong></a>
-</div>
-
+# TADA: Traversability Aware Domain Adaptive Semantic Segmentation
 
 ## Environment Setup
 
@@ -15,8 +8,8 @@ For this project, we used python 3.8.5. We recommend setting up a new virtual
 environment:
 
 ```shell
-python -m venv ~/venv/mic-seg
-source ~/venv/mic-seg/bin/activate
+python -m venv ~/venv/tada
+source ~/venv/tada/bin/activate
 ```
 
 In that environment, the requirements can be installed with:
@@ -120,9 +113,9 @@ classes. As the Iou for the 3 missing classes is 0, you can do the conversion
 
 Below, we provide checkpoints of AFRDA for the different benchmarks.
 
-* [AFRDA for GTA→Cityscapes](https://drive.google.com/file/d/14tnErcJmUShyQtzmTBLZ9BG_cRvGM4vV/view?usp=sharing)
-* [AFRDA for Synthia→Cityscapes](https://drive.google.com/file/d/103tKPC72d_FNjyJcAromFBCGpoCfhxZM/view?usp=sharing)
-* [AFRDA for RUGD→MESH](https://drive.google.com/file/d/1Iwm1Whm5hnxhAzv7mfvDRnHN5o58Ubnn/view?usp=sharing)
+* [TADA for GTA→Cityscapes](https://drive.google.com/file/d/14tnErcJmUShyQtzmTBLZ9BG_cRvGM4vV/view?usp=sharing)
+* [TADA for Synthia→Cityscapes](https://drive.google.com/file/d/103tKPC72d_FNjyJcAromFBCGpoCfhxZM/view?usp=sharing)
+* [TADA for RUGD→MESH](https://drive.google.com/file/d/1Iwm1Whm5hnxhAzv7mfvDRnHN5o58Ubnn/view?usp=sharing)
 
 The checkpoints come with the training logs. Please note that: The logs provide the mIoU for 19 classes. For Synthia→Cityscapes, it is necessary to convert the mIoU to the 16 valid classes. Please, read the section above for converting the mIoU.
 
